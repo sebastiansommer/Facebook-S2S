@@ -28,7 +28,7 @@ Before using the script, adjust the following variables:
 
 ### Example Usage
 ```
-https://yourhost.com/index.php?pwd=yourpassword&account=youraccount&clickid=yourclickid&ip=yourip
+https://yourhost.com/index.php?pwd=yourpassword&account=youraccount&clickid=yourclickid&ip=yourip&event=Purchase
 ```
 
 ## download.php
