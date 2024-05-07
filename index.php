@@ -68,8 +68,12 @@ if (isset($_GET['account']) && isset($_GET['clickid']) && isset($_GET['ip']) && 
                     ]
                 ]
             ]);
+
+            echo 'OK';
         } catch (GuzzleException $exception) {
             echo 'Error: ' . $exception->getResponse()->getBody();
         }
     }
+} else {
+    echo 'Invalid parameters';
 }
