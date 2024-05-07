@@ -18,12 +18,13 @@ Before using the script, adjust the following variables:
 
 #### Required Parameters
 
-| Parameter | Meaning                   |
-|-----------|---------------------------|
+| Parameter | Meaning                 |
+|-----------|-------------------------|
 | pwd       | Password to protect script |
-| account   | Account name              |
-| clickid   | Facebook Click ID         |
-| ip        | User IP                   |
+| account   | Account name            |
+| clickid   | Facebook Click ID       |
+| ip        | User IP                 |
+| event     | Event name              |
 
 ### Example Usage
 ```

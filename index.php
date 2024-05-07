@@ -6,7 +6,6 @@ use League\Csv\Reader;
 
 require_once 'vendor/autoload.php';
 
-$eventName = 'Purchase'; // Replace with the event name
 $password = 'PASSWORD'; // Replace with a password
 
 if (!isset($_GET['pwd']) || $_GET['pwd'] !== $password) {
@@ -25,7 +24,7 @@ foreach ($csv->getRecords() as $record) {
     ];
 }
 
-if (isset($_GET['account']) && isset($_GET['clickid']) && isset($_GET['ip']) && isset($pixelConfig[$_GET['account']])) {
+if (isset($_GET['account']) && isset($_GET['clickid']) && isset($_GET['ip']) && isset($_GET['event']) && isset($pixelConfig[$_GET['account']])) {
     $ts = time();
 
     $pixelConfig = $pixelConfig[$_GET['account']];
@@ -38,7 +37,7 @@ if (isset($_GET['account']) && isset($_GET['clickid']) && isset($_GET['ip']) && 
         ]);
 
         $data = [
-            'event_name' => $eventName,
+            'event_name' => $_GET['event'],
             'event_time' => $ts,
             'action_source' => 'website',
             'user_data' => [
