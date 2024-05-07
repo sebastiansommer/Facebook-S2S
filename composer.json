@@ -1,0 +1,7 @@
+{
+    "require": {
+        "google/apiclient": "^2.12",
+        "league/csv": "*",
+        "guzzlehttp/guzzle": "^7.6"
+    }
+}
